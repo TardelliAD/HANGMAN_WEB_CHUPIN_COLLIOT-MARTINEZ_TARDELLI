@@ -87,7 +87,6 @@ abbr[title] {
     text-decoration: underline; /* 2 */
     /* 2 */
     text-decoration-style: dotted;
-    text-decoration-line: underline;
 }
 
 /**
