@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    #gauche {
+        width: 100%;
+    }
+    #droite {
+        width: 100%;
+    }
+    #acceuil {
+        width: 100%;
+    }
+}
+
