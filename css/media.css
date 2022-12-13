@@ -1,12 +1,9 @@
-@media (max-width: 600px) {
-    #gauche {
-        width: 100%;
-    }
-    #droite {
-        width: 100%;
-    }
-    #acceuil {
-        width: 100%;
+
+@media screen and (max-width: 1000px )  {
+
+    #container
+    {
+        flex-direction: column-reverse;
     }
 }
 

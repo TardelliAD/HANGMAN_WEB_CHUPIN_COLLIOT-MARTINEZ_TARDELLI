@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,23 +10,26 @@
     <link rel="icon" type="image/png" href="../img/favicon.png"/>
     <link rel="stylesheet" type="text/css" href="../css/normalize.css"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/media.css"/>
 </head>
 <body>
-<div class="header">
+<header>
     <a class="bmpLogo" href="../index.html">
         <img src="../img/favicon.png" alt="">
     </a>
-</div>
+</header>
 
 
 <div id="container">
     <div id="gauche" class="content">
-        <form method="post" >
-            <label>
-                <input type="text" name="letter" placeholder="Entrer une lettre ou le mot complet" class="">
-            </label>
+        <div id="hidetext">
+            <p>_T___R______</p>
+        </div>
+        <form action="/Game" method="post" class="form-container">
+                <input type="text" name="letter" placeholder="Entrer une lettre ou le mot complet" id="input-letter">
+            <button type="submit" class="button-19" role="button">Valider</button>
         </form>
-    </div>
+        </div>
     <div id="droite" class="content">
     </div>
 </div>

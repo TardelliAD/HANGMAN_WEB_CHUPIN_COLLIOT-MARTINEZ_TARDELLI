@@ -32,7 +32,7 @@ footer{
     align-items: center;
     border: #00d4ff 5px solid;
 }
-#acceuil-2{
+.form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,6 @@ footer{
 }
 #container{
     display: flex;
-
     height: 100%;
 }
 .content{
@@ -51,9 +50,10 @@ footer{
 }
 
 #gauche {
-   display: flex;
-    justify-content: center;
+    display: flex;
+   justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-top: 55px;
     background-color: #F9E7E7;
     border: solid 5px #00d4ff;
@@ -79,7 +79,7 @@ a{
     cursor: pointer;
     display: inline-block;
     font-family: din-round,sans-serif;
-    font-size: 200%;
+    font-size: 32px;
     font-weight: 700;
     line-height: 20px;
     margin: 10px ;
@@ -122,7 +122,7 @@ a{
 .button-19:disabled {
     cursor: auto;
 }
-.header{
+header{
     position: absolute;
     top: 0;
     left: 0;
@@ -144,8 +144,22 @@ a{
     width: 100%;
 
 }
-.placeholder {
-    width: 300px;
-    height: 30px;
+#hidetext{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 700;
+}
+#input-letter{
+    border: solid 5px #00d4ff;
+    height: 50px;
+    border-radius: 16px;
+    padding: 0 15px ;
+    width: 335px;
     text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #1899D6;
+    text-decoration: #00d4ff;
+
 }
