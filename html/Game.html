@@ -23,14 +23,33 @@
 <div id="container">
     <div id="gauche" class="content">
         <div id="hidetext">
-            <p>_T___R______</p>
+            <p>{{.WordHidden}}</p>
+
         </div>
+            <p>Vous avez {{.Attempts}} essais</p>
         <form action="/Game" method="post" class="form-container">
                 <input type="text" name="letter" placeholder="Entrer une lettre ou le mot complet" id="input-letter">
             <button type="submit" class="button-19" role="button">Valider</button>
         </form>
+        <div id="textearea">
+            <p>{{.LetterUsed}}</p>
         </div>
+        </div>
+
     <div id="droite" class="content">
+       <div id="Pendu">
+           <div id="jambesgauche"></div>
+           <div id="jambesdroite"></div>
+           <div id="brasgauche"></div>
+           <div id="brasdroit"></div>
+           <div id="corps"></div>
+           <div id="tete"></div>
+           <div id="corde"></div>
+           <div id="poutreDiagonale"></div>
+           <div id="poutreHaut"></div>
+           <div id="poutre"></div>
+           <div id="barreDuBas"></div>
+       </div>
     </div>
 </div>
 
