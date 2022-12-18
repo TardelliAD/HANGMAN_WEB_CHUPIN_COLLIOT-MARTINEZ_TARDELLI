@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.assets v8.0.1 | MIT License | github.com/necolas/normalize.assets */
 
 /* Document
    ========================================================================== */
@@ -190,7 +190,7 @@ select { /* 1 */
 }
 
 /**
- * Correct the inability to css clickable types in iOS and Safari.
+ * Correct the inability to assets clickable types in iOS and Safari.
  */
 
 button,
@@ -275,7 +275,7 @@ textarea {
 }
 
 /**
- * Correct the cursor css of increment and decrement buttons in Chrome.
+ * Correct the cursor assets of increment and decrement buttons in Chrome.
  */
 
 [type="number"]::-webkit-inner-spin-button,
@@ -285,7 +285,7 @@ textarea {
 
 /**
  * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline css in Safari.
+ * 2. Correct the outline assets in Safari.
  */
 
 [type="search"] {
@@ -302,7 +302,7 @@ textarea {
 }
 
 /**
- * 1. Correct the inability to css clickable types in iOS and Safari.
+ * 1. Correct the inability to assets clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
 

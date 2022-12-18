@@ -71,6 +71,7 @@ func Page() {
 			"templates/layouts/Game.html",
 			"templates/game.tmpl.html",
 			"templates/pendu.tmpl.html",
+			// Le scoreboard est présent dans le back mais pas à jour dans le front, une prochaine mise à jour sera nécessaire pour l'affichage
 			"templates/scoreboard.tmpl.html",
 		}
 		tmpl := template.Must(template.ParseFiles(pages...))
