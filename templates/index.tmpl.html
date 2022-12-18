@@ -1,0 +1,32 @@
+{{ define "index" }}
+{{ if eq .Name "" }}
+<p>Entre un nom :</p>
+<form action="/" method="post" class="form-container">
+    <input type="text" name="name" placeholder="Entrer un nom" id="input-name">
+    <button type="submit" class="button-19" role="button">Valider</button>
+</form>
+
+
+{{ else }}
+<h1>BIENVENUE SUR LE JEU DU PENDU</h1>
+<h4>CHOISISSEZ LA DIFFICULTÉ</h4>
+
+
+<form action="/game" method="post" class="form-container">
+    <button class="button-19" role="button" name="button" value="EASY">
+        Facile
+    </button>
+
+
+    <button class="button-19" role="button" name="button" value="MEDIUM">
+        Moyen
+    </button>
+
+
+
+    <button class="button-19" role="button" name="button" value="HARD">
+        Difficile
+    </button>
+</form>
+{{ end }}
+{{ end }}

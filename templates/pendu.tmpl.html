@@ -1,0 +1,122 @@
+{{ define "pendu" }}
+{{ if eq .Attempts 1 }}
+    <div id="Pendu">
+        <div id="poutre"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 2 }}
+    <div id="Pendu">
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 3 }}
+    <div id="Pendu">
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 4 }}
+    <div id="Pendu">
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 5 }}
+    <div id="Pendu">
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 6 }}
+    <div id="Pendu">
+        <div id="tete"></div>
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 7 }}
+    <div id="Pendu">
+        <div id="corps"></div>
+        <div id="tete"></div>
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 8 }}
+    <div id="Pendu">
+        <div id="brasdroit"></div>
+        <div id="corps"></div>
+        <div id="tete"></div>
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 9 }}
+    <div id="Pendu">
+        <div id="brasgauche"></div>
+        <div id="brasdroit"></div>
+        <div id="corps"></div>
+        <div id="tete"></div>
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if eq .Attempts 10 }}
+    <div id="Pendu">
+        <div id="jambesdroite"></div>
+        <div id="brasgauche"></div>
+        <div id="brasdroit"></div>
+        <div id="corps"></div>
+        <div id="tete"></div>
+        <div id="corde"></div>
+        <div id="poutreDiagonale"></div>
+        <div id="poutreHaut"></div>
+        <div id="poutre"></div>
+        <div id="barreDuBas"></div>
+    </div>
+{{ end }}
+{{ if gt .Attempts 10 }}
+<!--<div id="status">
+    <p>Défaite</p>
+    <p>+1</p>
+</div>-->
+<div id="Pendu">
+    <div id="jambesgauche"></div>
+    <div id="jambesdroite"></div>
+    <div id="brasgauche"></div>
+    <div id="brasdroit"></div>
+    <div id="corps"></div>
+    <div id="tete"></div>
+    <div id="corde"></div>
+    <div id="poutreDiagonale"></div>
+    <div id="poutreHaut"></div>
+    <div id="poutre"></div>
+    <div id="barreDuBas"></div>
+</div>
+{{ end }}
+{{ if eq .Win true }}
+<!--<div id="status">
+    <p>Victoire</p>
+    <p>+1</p>
+</div>-->
+{{ end }}
+{{ end }}

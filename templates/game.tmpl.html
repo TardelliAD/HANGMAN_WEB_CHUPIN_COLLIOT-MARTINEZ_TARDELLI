@@ -1,0 +1,42 @@
+{{ define "game" }}
+{{ if gt .Attempts 10 }}
+
+<p>Le mot était </p>
+<div id="hidetext">
+    <p>{{ .WordHidden }}</p>
+</div>
+<p>{{ .MessageToPrint }}</p>
+<form action="/game" method="post" class="form-container">
+    <button type="submit" class="button-19" role="button" name="button-reboot" value="reboot">Rejouer</button>
+</form>
+
+
+{{ else if eq .Win true }}
+<p>Le mot est bien </p>
+<div id="hidetext">
+    <p>{{ .WordHidden }}</p>
+</div>
+<p>{{ .MessageToPrint }}</p>
+<form action="/game" method="post" class="form-container">
+    <button type="submit" class="button-19" role="button" name="button-reboot" value="reboot">Rejouer</button>
+</form>
+
+
+{{ else }}
+<div id="hidetext">
+    <p>{{ .WordHidden }}</p>
+</div>
+<p>{{ .MessageToPrint }}</p>
+{{ if gt .CurrentAttempts 1 }}
+<p>Il te reste {{ .CurrentAttempts }} vies.</p>
+{{ else }}
+<p>Il te reste {{ .CurrentAttempts }} vie.</p>
+{{ end }}
+<p>{{ .LettersUsed }}</p>
+<form action="/game" method="post" class="form-container">
+    <input type="text" name="letter" placeholder="Entrer une lettre ou le mot complet" id="input-letter">
+    <button type="submit" class="button-19" role="button">Valider</button>
+</form>
+{{ end }}
+
+{{ end }}

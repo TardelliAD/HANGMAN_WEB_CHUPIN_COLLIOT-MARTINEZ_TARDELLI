@@ -52,7 +52,7 @@ footer{
 
 #gauche {
     display: flex;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding-top: 90px;
@@ -71,8 +71,6 @@ a{
     text-decoration: none;
     color: black;
 }
-
-
 .button-19 {
     background-color: #1899D6;
     border: solid transparent;
@@ -168,6 +166,26 @@ header{
     text-decoration: #00d4ff;
     margin-top: 10px;
 
+}
+#input-name{
+    border: solid 5px #00d4ff;
+    height: 50px;
+    border-radius: 16px;
+    padding: 0 15px ;
+    width: 335px;
+    text-align: center;
+    font-size: 15px;
+    color: #1899D6;
+    text-decoration: #00d4ff;
+    margin-top: 10px;
+
+}
+
+#status{
+    border: solid 1px #000000;
+}
+#status>p {
+    font-size: 15px;
 }
 #Pendu{
     position: relative;
