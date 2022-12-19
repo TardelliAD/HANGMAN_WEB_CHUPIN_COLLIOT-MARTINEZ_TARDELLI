@@ -11,7 +11,7 @@ Les consignes sont sur le repo suivant : https://github.com/Lyon-Ynov-Campus/YTr
 
 ## Auteurs
 
-    Andrea Taredelli
+    Andrea Tardelli
     Théo Colliot-Martinez
     Tao Chupin
 
